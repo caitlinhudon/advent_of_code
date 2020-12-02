@@ -16,11 +16,24 @@ input = [1310, 1960, 1530, 1453, 1572, 1355, 1314, 1543, 1439, 1280, 1367, 1368,
 # look for the inverses we need, count instances of each number
 new_input = Counter(input + [2020 - i for i in input])
 
-#look for anything that shows up more than once
+# look for anything that shows up more than once
 output = { x: count for x, count in new_input.items() if count >= 2 }
 
 # multiply values together
-answer = math.prod(list(output.keys()))
-print(answer)
+answer_part_one = math.prod(list(output.keys()))
+print(answer_part_one)
 
+# part two --------------------------------------------------------------------
+
+# it's not pretty but it gets the job done and i'm tired
+for i in range(len(input)):
+    for j in range (len(input)):
+        for k in range (len(input)):
+            if input[j] + input[k] + input[i] == 2020:
+               solution = [input[j], input[k], input[i]]
+            else:
+                continue
+
+answer_part_two = math.prod(solution)
+print(answer_part_two)
 
