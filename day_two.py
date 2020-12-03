@@ -1020,4 +1020,17 @@ answer_part_one = df['valid'].sum()
 print(answer_part_one)
 
 # part two --------------------------------------------------------------------
+# the only positions that matter are the ones listed
 
+df2 = df
+df2['position_one'] = (df2['min'] - 1).astype(int)
+df2['position_two'] = (df2['max'] - 1).astype(int)
+df2['value_one'] = df.apply(lambda x: x.password[x.position_one: x.position_one + 1], axis=1)
+df2['value_two'] = df.apply(lambda x: x.password[x.position_two: x.position_two + 1], axis=1)
+
+df2['valid_part_two'] = np.where(((df2['letter'] == df2['value_one']) |
+                                 (df2['letter'] == df2['value_two'])) &
+                                 (df2['value_one'] != df2['value_two']), 1, 0)
+
+answer_part_two = df2['valid_part_two'].sum()
+print(answer_part_two)
