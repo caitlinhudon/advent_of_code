@@ -22,10 +22,3 @@ part_one_answer = get_trees(3)
 part_two_answer = get_trees(1) * get_trees(3) * get_trees(5) * get_trees(7) * get_trees(1, 2)
 print(part_one_answer)
 print(part_two_answer)
-
-
-# i've put in:
-3772314000
-
-# 6742008000 (too high)
-# 1314691560000 (too high)
