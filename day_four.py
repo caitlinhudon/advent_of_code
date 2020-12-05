@@ -55,6 +55,9 @@ for v in valid_passports:
 print(valid_passport_count_two)
 # 94 isn't the right answer
 # 109 is too low
+# 113 isn't correct
 # 114 isn't correct
 # 115 isn't correct
+# 118 isn't correct
+# 121 is correct
 # 123 is too high
