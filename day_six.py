@@ -15,10 +15,6 @@ print(sum(all_counts))
 
 # part two --------------------------------------------------------------------
 
-#for answer in group_answers:
-#    count = len(Counter(answer))
-#    all_counts.append(count)
-
 group_answers_two = [str.replace(answer, '\n',' ') for answer in group_answers_raw]
 
 all_answered = []
