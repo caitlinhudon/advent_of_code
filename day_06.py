@@ -1,6 +1,6 @@
 from collections import Counter
 
-with open('inputs/day_six.txt') as input:
+with open('inputs/day_06.txt') as input:
     data = input.read()
 
 group_answers_raw = data.split('\n\n')

@@ -1,5 +1,5 @@
 import math
-with open('inputs/day_three.txt') as input:
+with open('inputs/day_03.txt') as input:
     grid = input.read().splitlines()
 
 def get_trees(over, down = 1):

@@ -1,6 +1,6 @@
 import re
 
-with open('inputs/day_four.txt') as input:
+with open('inputs/day_04.txt') as input:
     data = input.read()
 
 passports = data.split('\n\n')

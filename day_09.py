@@ -1,6 +1,6 @@
 from itertools import combinations
 
-with open('inputs/day_nine.txt') as f:
+with open('inputs/day_09.txt') as f:
     xmas_data = f.read().splitlines()
 
 

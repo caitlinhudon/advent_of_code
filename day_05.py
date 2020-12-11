@@ -1,4 +1,4 @@
-with open('inputs/day_five.txt') as f:
+with open('inputs/day_05.txt') as f:
     boarding_passes = f.read().splitlines()
 
 seats = []

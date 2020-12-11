@@ -1,4 +1,4 @@
-with open('inputs/day_eight.txt') as f:
+with open('inputs/day_08.txt') as f:
     instructions = f.read().splitlines()
 
 milestones = []

@@ -1,5 +1,5 @@
 import re
-with open('inputs/day_seven.txt') as input:
+with open('inputs/day_07.txt') as input:
     data = input.read().splitlines()
 
 bag_dict = {}

@@ -1,4 +1,4 @@
-with open('inputs/day_ten.txt') as f:
+with open('inputs/day_10.txt') as f:
     joltage_ratings = f.read().splitlines()
     joltage_ratings = [int(j) for j in joltage_ratings]
     joltage_ratings.sort()
