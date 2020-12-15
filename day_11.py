@@ -8,7 +8,7 @@ with open('inputs/day_11_example.txt') as f:
 # 1 2 3
 # 4 X 5   <--- surrounding seats, numbered
 # 7 8 9
-
+print(seats)
 upper_row_index = len(seats) - 1
 
 seat_map = seats
@@ -67,6 +67,7 @@ while i < 6:
                 row_list.append('L')
             else:
                 continue
+            row_list = ''.join(row_list)
         new_seat_map.append(row_list)
         if new_seat_map == seat_map:
             output = new_seat_map
